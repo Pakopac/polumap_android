@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-240.000000"
+            android:translateY="-1008.000000">
+        <group
+                android:name="ISL--Iceland"
+                android:translateX="240.000000"
+                android:translateY="1008.000000">
+            <path
+                android:name="blue-dark"
+                android:fillColor="#227FBB"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 24 0 C 37.2548339959 0 48 10.7451660041 48 24 C 48 37.2548339959 37.2548339959 48 24 48 C 10.7451660041 48 0 37.2548339959 0 24 C 0 10.7451660041 10.7451660041 0 24 0 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M20,0.331833761 L20,20 L47.6681662,20 C47.8864048,21.3008339 48,22.6371512 48,24 C48,25.3628488 47.8864048,26.6991661 47.6681662,28 L20,28 L20,47.6681662 C17.1283034,47.1863868 14.429532,46.1946367 11.9999933,44.7892234 L12,28 L0.331833761,28 C0.113595185,26.6991661 0,25.3628488 0,24 C0,22.6371512 0.113595185,21.3008339 0.331833761,20 L12,20 L12,3.21077269 C14.429532,1.80536327 17.1283034,0.813613163 20,0.331833761 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M18,0.756104911 L18,22 L47.9178524,22 C47.9722573,22.6594667 48,23.3264935 48,24 C48,24.6735065 47.9722573,25.3405333 47.9178524,26 L18,26 L18,47.2438951 C16.6142764,46.8872345 15.2769879,46.4099247 14,45.8238311 L14,26 L0.082147554,26 C0.0277426577,25.3405333 0,24.6735065 0,24 C0,23.3264935 0.0277426577,22.6594667 0.082147554,22 L14,22 L14,2.1761689 C15.2769879,1.59007531 16.6142764,1.11276551 18,0.756104911 Z" />
+        </group>
+    </group>
+</vector>

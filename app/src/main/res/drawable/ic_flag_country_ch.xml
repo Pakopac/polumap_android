@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-48.000000"
+            android:translateY="-2160.000000">
+        <group
+                android:name="CHE--Switzerland"
+                android:translateX="48.000000"
+                android:translateY="2160.000000">
+            <path
+                android:name="red"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 24 0 C 37.2548339959 0 48 10.7451660041 48 24 C 48 37.2548339959 37.2548339959 48 24 48 C 10.7451660041 48 0 37.2548339959 0 24 C 0 10.7451660041 10.7451660041 0 24 0 Z" />
+            <path
+                android:name="Rectangle-82"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 21 15 H 27 V 33 H 21 V 15 Z" />
+            <path
+                android:name="Rectangle-83"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 15 21 H 33 V 27 H 15 V 21 Z" />
+        </group>
+    </group>
+</vector>

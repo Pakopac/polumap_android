@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-336.000000"
+            android:translateY="-2352.000000">
+        <group
+                android:name="UZB--Uzbekistan"
+                android:translateX="336.000000"
+                android:translateY="2352.000000">
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M1.36564566,16 L46.6343543,16 C47.5187662,18.5022314 48,21.1949166 48,24 C48,26.8050834 47.5187662,29.4977686 46.6343543,32 L1.36564566,32 C0.481233769,29.4977686 0,26.8050834 0,24 C0,21.1949166 0.481233769,18.5022314 1.36564566,16 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#4BB7C0"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M46.6343543,16 L1.36564566,16 C4.66033693,6.67846102 13.5502494,0 24,0 C34.4497506,0 43.3396631,6.67846102 46.6343543,16 Z" />
+            <group
+                    android:name="Group-4"
+                    android:translateX="18.000000"
+                    android:translateY="3.500000">
+                <path
+                    android:name="Star-57"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 1.5 10.1 L 0.618322122 10.7135255 L 0.92936609 9.6854102 L 0.0734152256 9.03647451 L 1.14732885 9.0145898 L 1.5 8 L 1.85267115 9.0145898 L 2.92658477 9.03647451 L 2.07063391 9.6854102 L 2.38167788 10.7135255 Z" />
+                <path
+                    android:name="Star-57"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 5.5 10.1 L 4.61832212 10.7135255 L 4.92936609 9.6854102 L 4.07341523 9.03647451 L 5.14732885 9.0145898 L 5.5 8 L 5.85267115 9.0145898 L 6.92658477 9.03647451 L 6.07063391 9.6854102 L 6.38167788 10.7135255 Z" />
+                <path
+                    android:name="Star-57"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 9.5 10.1 L 8.61832212 10.7135255 L 8.92936609 9.6854102 L 8.07341523 9.03647451 L 9.14732885 9.0145898 L 9.5 8 L 9.85267115 9.0145898 L 10.9265848 9.03647451 L 10.0706339 9.6854102 L 10.3816779 10.7135255 Z" />
+                <path
+                    android:name="Star-57"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 13.5 10.1 L 12.6183221 10.7135255 L 12.9293661 9.6854102 L 12.0734152 9.03647451 L 13.1473288 9.0145898 L 13.5 8 L 13.8526712 9.0145898 L 14.9265848 9.03647451 L 14.0706339 9.6854102 L 14.3816779 10.7135255 Z" />
+                <path
+                    android:name="Star-57"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 17.5 10.1 L 16.6183221 10.7135255 L 16.9293661 9.6854102 L 16.0734152 9.03647451 L 17.1473288 9.0145898 L 17.5 8 L 17.8526712 9.0145898 L 18.9265848 9.03647451 L 18.0706339 9.6854102 L 18.3816779 10.7135255 Z" />
+                <path
+                    android:name="Star-57"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 5.5 6.1 L 4.61832212 6.71352549 L 4.92936609 5.6854102 L 4.07341523 5.03647451 L 5.14732885 5.0145898 L 5.5 4 L 5.85267115 5.0145898 L 6.92658477 5.03647451 L 6.07063391 5.6854102 L 6.38167788 6.71352549 Z" />
+                <path
+                    android:name="Star-57"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 9.5 6.1 L 8.61832212 6.71352549 L 8.92936609 5.6854102 L 8.07341523 5.03647451 L 9.14732885 5.0145898 L 9.5 4 L 9.85267115 5.0145898 L 10.9265848 5.03647451 L 10.0706339 5.6854102 L 10.3816779 6.71352549 Z" />
+                <path
+                    android:name="Star-57"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 13.5 6.1 L 12.6183221 6.71352549 L 12.9293661 5.6854102 L 12.0734152 5.03647451 L 13.1473288 5.0145898 L 13.5 4 L 13.8526712 5.0145898 L 14.9265848 5.03647451 L 14.0706339 5.6854102 L 14.3816779 6.71352549 Z" />
+                <path
+                    android:name="Star-57"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 17.5 6.1 L 16.6183221 6.71352549 L 16.9293661 5.6854102 L 16.0734152 5.03647451 L 17.1473288 5.0145898 L 17.5 4 L 17.8526712 5.0145898 L 18.9265848 5.03647451 L 18.0706339 5.6854102 L 18.3816779 6.71352549 Z" />
+                <path
+                    android:name="Star-57"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 9.5 2.1 L 8.61832212 2.71352549 L 8.92936609 1.6854102 L 8.07341523 1.03647451 L 9.14732885 1.0145898 L 9.5 0 L 9.85267115 1.0145898 L 10.9265848 1.03647451 L 10.0706339 1.6854102 L 10.3816779 2.71352549 Z" />
+                <path
+                    android:name="Star-57"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 13.5 2.1 L 12.6183221 2.71352549 L 12.9293661 1.6854102 L 12.0734152 1.03647451 L 13.1473288 1.0145898 L 13.5 0 L 13.8526712 1.0145898 L 14.9265848 1.03647451 L 14.0706339 1.6854102 L 14.3816779 2.71352549 Z" />
+                <path
+                    android:name="Star-57"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 17.5 2.1 L 16.6183221 2.71352549 L 16.9293661 1.6854102 L 16.0734152 1.03647451 L 17.1473288 1.0145898 L 17.5 0 L 17.8526712 1.0145898 L 18.9265848 1.03647451 L 18.0706339 1.6854102 L 18.3816779 2.71352549 Z" />
+            </group>
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M17,3.08295844 C14.1622867,3.55903653 12,6.02700371 12,9 C12,11.9729963 14.1622867,14.4409635 17,14.9170416 C16.6747915,14.9716012 16.3407122,15 16,15 C12.6862915,15 10,12.3137085 10,9 C10,5.6862915 12.6862915,3 16,3 C16.3407122,3 16.6747915,3.0283988 17,3.08295844 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#1FCE6D"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M1.36564566,32 L46.6343543,32 C43.3396631,41.321539 34.4497506,48 24,48 C13.5502494,48 4.66033693,41.321539 1.36564566,32 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M0.756104911,18 L47.2438951,18 C47.737482,19.9177195 48,21.9282026 48,24 C48,26.0717974 47.737482,28.0822805 47.2438951,30 L0.756104911,30 C0.262518019,28.0822805 0,26.0717974 0,24 C0,21.9282026 0.262518019,19.9177195 0.756104911,18 Z" />
+        </group>
+    </group>
+</vector>

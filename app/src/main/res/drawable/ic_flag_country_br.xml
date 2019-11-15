@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-48.000000"
+            android:translateY="-336.000000">
+        <group
+                android:name="BRA--Brazil"
+                android:translateX="48.000000"
+                android:translateY="336.000000">
+            <path
+                android:name="Oval-97"
+                android:fillColor="#1AAF5D"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 24 0 C 37.2548339959 0 48 10.7451660041 48 24 C 48 37.2548339959 37.2548339959 48 24 48 C 10.7451660041 48 0 37.2548339959 0 24 C 0 10.7451660041 10.7451660041 0 24 0 Z" />
+            <path
+                android:name="yellow"
+                android:fillColor="#F2C500"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 24 10 L 4 24 L 24 38 L 44 24 L 24 10 Z" />
+            <path
+                android:name="blue"
+                android:fillColor="#227FBB"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M33,24 C33,19.029437 28.970563,15 24,15 C19.029437,15 15,19.029437 15,24 C15,28.970563 19.029437,33 24,33 C28.970563,33 33,28.970563 33,24 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M32.9399339,25.0454191 C32.8721446,25.6314437 32.7480633,26.2003161 32.5732369,26.7464894 C29.3800241,23.6618935 25.0328568,21.7642299 20.2424665,21.7642299 C18.4623192,21.7642299 16.7433777,22.026283 15.122114,22.5139171 C15.2185528,21.933492 15.3705349,21.3718406 15.5724143,20.8346089 C17.0675953,20.4620107 18.6319338,20.2642299 20.2424665,20.2642299 C25.1074547,20.2642299 29.5509291,22.0689449 32.9399339,25.0454191 Z" />
+        </group>
+    </group>
+</vector>

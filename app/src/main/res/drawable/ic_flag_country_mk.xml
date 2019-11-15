@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-336.000000"
+            android:translateY="-1296.000000">
+        <group
+                android:name="MKD--Macedonia-Republic-of"
+                android:translateX="336.000000"
+                android:translateY="1296.000000">
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#F2C500"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 24 0 C 37.2548339959 0 48 10.7451660041 48 24 C 48 37.2548339959 37.2548339959 48 24 48 C 10.7451660041 48 0 37.2548339959 0 24 C 0 10.7451660041 10.7451660041 0 24 0 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M0.176630906,26.9264995 L23.9808569,24.0023516 L23.9801604,24.0123382 L18.7569826,47.4255991 C14.7714554,46.5374883 11.1595286,44.6582593 8.19327991,42.0599897 L23.9625515,24.0232891 L3.61690922,36.6761882 C1.81246384,33.7808069 0.607773908,30.4729802 0.176630906,26.9264995 Z M3.65042552,11.2701896 L23.8573151,23.8367987 L8.20295872,5.93153673 C11.1714243,3.33411989 14.7856258,1.45643361 18.7732618,0.570779351 L23.9807117,23.9135387 L24,23.9255341 L23.9829196,23.9234359 L24,24 L23.9270619,23.9165742 L0.185663296,21.0001441 C0.627152074,17.4595125 1.83987841,14.1583887 3.65042552,11.2701896 Z M47.8233691,21.0735005 L24,24.0000001 L44.3830908,11.3238119 C46.1875362,14.2191932 47.3922261,17.5270199 47.8233691,21.0735005 Z M44.3830908,36.6761882 L24,24 L47.8233691,26.9264995 C47.3922261,30.4729802 46.1875362,33.7808069 44.3830908,36.6761882 Z M29.2267382,0.570779351 C33.2143742,1.45643361 36.8285757,3.33411989 39.7970413,5.93153673 L24,24 L29.2267382,0.570779351 Z M39.7970413,42.0684633 C36.8285757,44.6658801 33.2143742,46.5435664 29.2267382,47.4292206 L24,24 L39.7970413,42.0684633 Z" />
+            <path
+                android:name="Path"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M31,24 C31,20.1340066 27.8659934,17 24,17 C20.1340066,17 17,20.1340066 17,24 C17,27.8659934 20.1340066,31 24,31 C27.8659934,31 31,27.8659934 31,24 Z" />
+            <path
+                android:name="Path"
+                android:fillColor="#F2C500"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M30,24 C30,20.6862913 27.3137086,18 24,18 C20.6862913,18 18,20.6862913 18,24 C18,27.3137086 20.6862913,30 24,30 C27.3137086,30 30,27.3137086 30,24 Z" />
+        </group>
+    </group>
+</vector>

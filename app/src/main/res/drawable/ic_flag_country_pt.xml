@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-144.000000"
+            android:translateY="-1776.000000">
+        <group
+                android:name="PRT--Portugal"
+                android:translateX="144.000000"
+                android:translateY="1776.000000">
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M16,46.6343543 L16,1.36564566 C18.5022314,0.481233769 21.1949166,0 24,0 C37.254834,0 48,10.745166 48,24 C48,37.254834 37.254834,48 24,48 C21.1949166,48 18.5022314,47.5187662 16,46.6343543 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#1AAF5D"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M16,1.36564566 L16,46.6343543 C6.67846102,43.3396631 0,34.4497506 0,24 C0,13.5502494 6.67846102,4.66033693 16,1.36564566 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#F2C500"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M16,33 C10.4771525,33 6,28.5228475 6,23 C6,17.4771525 10.4771525,13 16,13 C21.5228475,13 26,17.4771525 26,23 C26,28.5228475 21.5228475,33 16,33 Z M16,31 C20.418278,31 24,27.418278 24,23 C24,18.581722 20.418278,15 16,15 C11.581722,15 8,18.581722 8,23 C8,27.418278 11.581722,31 16,31 Z" />
+            <path
+                android:name="Rectangle-56"
+                android:fillColor="#F2C500"
+                android:strokeWidth="1"
+                android:pathData="M21.5,17.5 L21.5,24 C21.5,27.0375661 19.0375661,29.5 16,29.5 C12.9624339,29.5 10.5,27.0375661 10.5,24 L10.5,17.5 L21.5,17.5 Z" />
+            <path
+                android:name="Rectangle-56"
+                android:fillColor="#E94B35"
+                android:strokeWidth="1"
+                android:pathData="M11,18 L21,18 L21,24 C21,26.7614237 18.7614237,29 16,29 C13.2385763,29 11,26.7614237 11,24 L11,18 Z" />
+            <path
+                android:name="Path"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M13,24 C13,25.6568542 14.3431458,27 16,27 C17.6568542,27 19,25.6568542 19,24 L19,20 L13,20 L13,24 Z" />
+            <path
+                android:name="Rectangle-57"
+                android:fillColor="#2C97DE"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 15.5 21 H 16.5 V 22 H 15.5 V 21 Z" />
+            <path
+                android:name="Rectangle-57"
+                android:fillColor="#2C97DE"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 14 23 H 15 V 24 H 14 V 23 Z" />
+            <path
+                android:name="Rectangle-57"
+                android:fillColor="#2C97DE"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 17 23 H 18 V 24 H 17 V 23 Z" />
+            <path
+                android:name="Rectangle-57"
+                android:fillColor="#2C97DE"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 15.5 25 H 16.5 V 26 H 15.5 V 25 Z" />
+            <path
+                android:name="Rectangle-57"
+                android:fillColor="#2C97DE"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 15.5 23 H 16.5 V 24 H 15.5 V 23 Z" />
+        </group>
+    </group>
+</vector>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-912.000000"
+            android:translateY="-432.000000">
+        <group
+                android:name="COL--Colombia"
+                android:translateX="912.000000"
+                android:translateY="432.000000">
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#227FBB"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M48,24 C48,28.3714485 46.8312671,32.4699248 44.7892234,36.0000067 L3.21077269,36 C1.16873291,32.4699248 0,28.3714485 0,24 L48,24 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M3.21077269,36 L44.7892273,36 C40.6395095,43.1736194 32.8833855,48 24,48 C15.1166145,48 7.36049055,43.1736194 3.21077655,36.0000067 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#F2C500"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M48,24 L0,24 C0,10.745166 10.745166,0 24,0 C37.254834,0 48,10.745166 48,24 Z" />
+        </group>
+    </group>
+</vector>

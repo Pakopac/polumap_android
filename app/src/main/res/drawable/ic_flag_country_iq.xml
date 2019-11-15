@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-624.000000"
+            android:translateY="-1008.000000">
+        <group
+                android:name="IRQ--Iraq"
+                android:translateX="624.000000"
+                android:translateY="1008.000000">
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M1.36564566,16 L46.6343543,16 C47.5187662,18.5022314 48,21.1949166 48,24 C48,26.8050834 47.5187662,29.4977686 46.6343543,32 L1.36564566,32 C0.481233769,29.4977686 0,26.8050834 0,24 C0,21.1949166 0.481233769,18.5022314 1.36564566,16 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#000000"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M1.36564566,32 L46.6343543,32 C43.3396631,41.321539 34.4497506,48 24,48 C13.5502494,48 4.66033693,41.321539 1.36564566,32 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M46.6343543,16 L1.36564566,16 C4.66033693,6.67846102 13.5502494,0 24,0 C34.4497506,0 43.3396631,6.67846102 46.6343543,16 Z" />
+            <path
+                android:name="Rectangle-28"
+                android:fillColor="#1AAF5D"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M11.5,25 L23.5,25 C23.7761424,25 24,25.2238576 24,25.5 L24,26.5 C24,26.7761424 23.7761424,27 23.5,27 L11.5,27 C11.2238576,27 11,26.7761424 11,26.5 L11,25.5 C11,25.2238576 11.2238576,25 11.5,25 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#1AAF5D"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M29,25 L31,25 L31,20.5 C31,20.2238576 31.2238576,20 31.5,20 L32.5,20 C32.7761424,20 33,20.2238576 33,20.5 L33,25 L33.5,25 C33.7761424,25 34,25.2238576 34,25.5 L34,26.5 C34,26.7761424 33.7761424,27 33.5,27 L26.5,27 C26.2238576,27 26,26.7761424 26,26.5 L26,25.5 C26,25.2238576 26.2238576,25 26.5,25 L27,25 L27,22.5 C27,22.2238576 27.2238576,22 27.5,22 L28.5,22 C28.7761424,22 29,22.2238576 29,22.5 L29,25 Z" />
+            <path
+                android:name="Rectangle-29"
+                android:fillColor="#1AAF5D"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M23,20.5 L23,25.9999727 L21,25.9999727 L21,20.5 C21,20.2238576 21.2238576,20 21.5,20 L22.5,20 C22.7761424,20 23,20.2238576 23,20.5 Z" />
+            <path
+                android:name="Rectangle-29"
+                android:fillColor="#1AAF5D"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M18.909475,21.4439972 L14.4725455,26.9231488 L12.9182536,25.664508 L17.3551831,20.1853564 C17.5289651,19.9707534 17.8438134,19.9376616 18.0584163,20.1114436 L18.8355623,20.740764 C19.0501652,20.914546 19.0832571,21.2293942 18.909475,21.4439972 Z" />
+        </group>
+    </group>
+</vector>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-528.000000"
+            android:translateY="-1008.000000">
+        <group
+                android:name="IRN--Iran-Islamic-Republic-of"
+                android:translateX="528.000000"
+                android:translateY="1008.000000">
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#1AAF5D"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M46.6343543,16 L1.36564566,16 C4.66033693,6.67846102 13.5502494,0 24,0 C34.4497506,0 43.3396631,6.67846102 46.6343543,16 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M1.36564566,16 L46.6343543,16 C47.5187662,18.5022314 48,21.1949166 48,24 C48,26.8050834 47.5187662,29.4977686 46.6343543,32 L1.36564566,32 C0.481233769,29.4977686 0,26.8050834 0,24 C0,21.1949166 0.481233769,18.5022314 1.36564566,16 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M1.36564566,32 L46.6343543,32 C43.3396631,41.321539 34.4497506,48 24,48 C13.5502494,48 4.66033693,41.321539 1.36564566,32 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 3 14 H 5 V 15 H 3 V 14 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 7 14 H 9 V 15 H 7 V 14 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 11 14 H 13 V 15 H 11 V 14 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 15 14 H 17 V 15 H 15 V 14 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 19 14 H 21 V 15 H 19 V 14 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 23 14 H 25 V 15 H 23 V 14 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 27 14 H 29 V 15 H 27 V 14 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 31 14 H 33 V 15 H 31 V 14 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 35 14 H 37 V 15 H 35 V 14 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 39 14 H 41 V 15 H 39 V 14 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 43 14 H 45 V 15 H 43 V 14 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 3 33 H 5 V 34 H 3 V 33 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 7 33 H 9 V 34 H 7 V 33 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 11 33 H 13 V 34 H 11 V 33 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 15 33 H 17 V 34 H 15 V 33 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 19 33 H 21 V 34 H 19 V 33 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 23 33 H 25 V 34 H 23 V 33 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 27 33 H 29 V 34 H 27 V 33 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 31 33 H 33 V 34 H 31 V 33 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 35 33 H 37 V 34 H 35 V 33 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 39 33 H 41 V 34 H 39 V 33 Z" />
+            <path
+                android:name="Rectangle-26"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 43 33 H 45 V 34 H 43 V 33 Z" />
+            <path
+                android:name="Shape"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M21.2,19.5742725 C17.445131,21.8380991 17.4396102,25.5725839 19.2596548,28.5106104 C15.4719181,26.1904578 16.6665792,19.9717122 21.2,19.5742725 Z M26.8,19.5742725 C30.554869,21.8380991 30.5603898,25.5725839 28.7403454,28.5106104 C32.5280818,26.1904578 31.3334208,19.9717122 26.8,19.5742725 Z M22.0406787,18 C23.0061508,19.6015525 24.0280083,18.3075503 24.0280083,18.3075503 C24.0280083,18.3075503 25.0498658,19.6015351 26.0153379,18 C26.5670416,19.0618989 24.9621469,20.0309774 24.0280083,19.0561194 C23.0938697,20.0309774 21.488975,19.0619163 22.0406787,18 Z M20.56149,29.176992 C21.8597404,29.2765341 22.8585837,28.8680572 22.9130483,28.8434049 C22.9130483,28.8434049 19.7390628,27.2947198 19.8008917,24.1413447 C19.9863784,20.9506608 21.8618646,19.9803011 21.8618646,19.9803011 C21.8618646,19.9803011 18.5231052,24.3837247 23.4281757,28.0642066 L23.2117746,23.5113245 L23.2117746,20.1667042 C23.4900045,20.1060532 24.0000928,19.5742725 24.0000928,19.5742725 C24.0000928,19.5742725 24.510181,20.1060532 24.788411,20.1667042 L24.788411,23.5113245 L24.5720099,28.0642066 C29.4768949,24.3837247 26.1381355,19.9800212 26.1381355,19.9800212 C26.1381355,19.9800212 28.0136217,20.950297 28.1991083,24.1410648 C28.2609373,27.294524 25.0869517,28.8431253 25.0869517,28.8431253 C25.3754762,28.9737193 26.1586625,29.1976549 27.5601069,29.1976549 C25.8494873,29.7387556 24.5511118,29.3469173 24.5511118,29.3469173 L23.9998145,30 L23.4488883,29.3471973 C23.4488883,29.3471973 22.1829097,29.7122327 20.56149,29.176992 Z" />
+        </group>
+    </group>
+</vector>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_intro">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/intro_bg_shape"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_intro_path" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/intro_bg_leaf1_top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/intro_bg_leaf1_end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/intro_bg_leaf1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitStart"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.25"
+        app:srcCompat="@drawable/ic_intro_leaf1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/intro_bg_leaf2_top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/intro_bg_leaf2_end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/intro_bg_leaf2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="@id/intro_bg_shape"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="@id/intro_bg_leaf2_end_guideline"
+        app:layout_constraintTop_toTopOf="@id/intro_bg_leaf2_top_guideline"
+        app:layout_constraintWidth_percent="0.22"
+        app:srcCompat="@drawable/ic_intro_leaf2" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/intro_bg_tree1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.20"
+        app:srcCompat="@drawable/ic_intro_tree" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/intro_bg_tree2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/intro_bg_grass"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintStart_toEndOf="@id/intro_bg_tree1"
+        app:srcCompat="@drawable/ic_intro_tree" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/intro_bg_grass"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.5"
+        app:srcCompat="@drawable/ic_intro_grass" />
+
+</merge>

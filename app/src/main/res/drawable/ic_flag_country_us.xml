@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-48.000000"
+            android:translateY="-2352.000000">
+        <group
+                android:name="USA--United-States-of-America"
+                android:translateX="48.000000"
+                android:translateY="2352.000000">
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 24 0 C 37.2548339959 0 48 10.7451660041 48 24 C 48 37.2548339959 37.2548339959 48 24 48 C 10.7451660041 48 0 37.2548339959 0 24 C 0 10.7451660041 10.7451660041 0 24 0 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M36.6490154,3.5999999 L24,3.5999999 L24,0 C28.6420733,9.748501e-16 32.9763302,1.3179184 36.6490154,3.5999999 Z M41.3332379,7.39998372 C42.3911857,8.50436378 43.3446256,9.70966019 44.1776684,10.9999836 L24,10.9999836 L24,7.39998372 L41.3332379,7.39998372 Z M46.1734201,14.799967 C46.65404,15.9570223 47.0467327,17.1598019 47.3431597,18.3999674 L24,18.3999674 L24,14.7999674 L46.173423,14.7999674 Z M47.9335128,22.1999512 C47.9775759,22.7942066 48,23.3944846 48,24 C48,24.6054822 47.9775784,25.2057276 47.9335201,25.7999511 L24,25.7999511 L24,22.1999512 L47.9335128,22.1999512 Z M0.656816979,29.5999349 L47.343183,29.5999349 C47.0467617,30.8400998 46.6540749,32.0428793 46.1734609,33.1999348 L1.82653913,33.1999348 C1.34592514,32.0428793 0.953238263,30.8400998 0.656816979,29.5999349 Z M3.82226848,36.9999186 L44.1777315,36.9999186 C43.3446984,38.2902409 42.3912687,39.4955372 41.3333315,40.5999185 L6.66666849,40.5999185 C5.60873135,39.4955372 4.65530163,38.2902409 3.82226848,36.9999186 Z M11.3508272,44.3999023 L36.6491728,44.3999023 C32.9947196,46.6706941 28.6852351,47.9868669 24.0692378,47.9999022 L23.9307622,47.9999022 C19.3147649,47.9868669 15.0052804,46.6706941 11.3508272,44.3999023 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#227FBB"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M24,0 L24,25.8000488 L0.0664871572,25.8000488 C0.0224240964,25.2057934 0,24.6055154 0,24 C0,10.745166 10.745166,0 24,0 Z" />
+            <group
+                    android:name="Group-3"
+                    android:translateX="2.000000"
+                    android:translateY="1.000000">
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 17 4.5 L 16.4122147 4.80901699 L 16.5244717 4.1545085 L 16.0489435 3.69098301 L 16.7061074 3.5954915 L 17 3 L 17.2938926 3.5954915 L 17.9510565 3.69098301 L 17.4755283 4.1545085 L 17.5877853 4.80901699 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 13 4.5 L 12.4122147 4.80901699 L 12.5244717 4.1545085 L 12.0489435 3.69098301 L 12.7061074 3.5954915 L 13 3 L 13.2938926 3.5954915 L 13.9510565 3.69098301 L 13.4755283 4.1545085 L 13.5877853 4.80901699 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 19 1.5 L 18.4122147 1.80901699 L 18.5244717 1.1545085 L 18.0489435 0.690983006 L 18.7061074 0.595491503 L 19 0 L 19.2938926 0.595491503 L 19.9510565 0.690983006 L 19.4755283 1.1545085 L 19.5877853 1.80901699 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 7 7.5 L 6.41221475 7.80901699 L 6.52447174 7.1545085 L 6.04894348 6.69098301 L 6.70610737 6.5954915 L 7 6 L 7.29389263 6.5954915 L 7.95105652 6.69098301 L 7.47552826 7.1545085 L 7.58778525 7.80901699 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 11 7.5 L 10.4122147 7.80901699 L 10.5244717 7.1545085 L 10.0489435 6.69098301 L 10.7061074 6.5954915 L 11 6 L 11.2938926 6.5954915 L 11.9510565 6.69098301 L 11.4755283 7.1545085 L 11.5877853 7.80901699 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 15 7.5 L 14.4122147 7.80901699 L 14.5244717 7.1545085 L 14.0489435 6.69098301 L 14.7061074 6.5954915 L 15 6 L 15.2938926 6.5954915 L 15.9510565 6.69098301 L 15.4755283 7.1545085 L 15.5877853 7.80901699 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 15 7.5 L 14.4122147 7.80901699 L 14.5244717 7.1545085 L 14.0489435 6.69098301 L 14.7061074 6.5954915 L 15 6 L 15.2938926 6.5954915 L 15.9510565 6.69098301 L 15.4755283 7.1545085 L 15.5877853 7.80901699 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 17 10.5 L 16.4122147 10.809017 L 16.5244717 10.1545085 L 16.0489435 9.69098301 L 16.7061074 9.5954915 L 17 9 L 17.2938926 9.5954915 L 17.9510565 9.69098301 L 17.4755283 10.1545085 L 17.5877853 10.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 5 10.5 L 4.41221475 10.809017 L 4.52447174 10.1545085 L 4.04894348 9.69098301 L 4.70610737 9.5954915 L 5 9 L 5.29389263 9.5954915 L 5.95105652 9.69098301 L 5.47552826 10.1545085 L 5.58778525 10.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 9 10.5 L 8.41221475 10.809017 L 8.52447174 10.1545085 L 8.04894348 9.69098301 L 8.70610737 9.5954915 L 9 9 L 9.29389263 9.5954915 L 9.95105652 9.69098301 L 9.47552826 10.1545085 L 9.58778525 10.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 13 10.5 L 12.4122147 10.809017 L 12.5244717 10.1545085 L 12.0489435 9.69098301 L 12.7061074 9.5954915 L 13 9 L 13.2938926 9.5954915 L 13.9510565 9.69098301 L 13.4755283 10.1545085 L 13.5877853 10.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 19 7.5 L 18.4122147 7.80901699 L 18.5244717 7.1545085 L 18.0489435 6.69098301 L 18.7061074 6.5954915 L 19 6 L 19.2938926 6.5954915 L 19.9510565 6.69098301 L 19.4755283 7.1545085 L 19.5877853 7.80901699 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 3 13.5 L 2.41221475 13.809017 L 2.52447174 13.1545085 L 2.04894348 12.690983 L 2.70610737 12.5954915 L 3 12 L 3.29389263 12.5954915 L 3.95105652 12.690983 L 3.47552826 13.1545085 L 3.58778525 13.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 7 13.5 L 6.41221475 13.809017 L 6.52447174 13.1545085 L 6.04894348 12.690983 L 6.70610737 12.5954915 L 7 12 L 7.29389263 12.5954915 L 7.95105652 12.690983 L 7.47552826 13.1545085 L 7.58778525 13.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 11 13.5 L 10.4122147 13.809017 L 10.5244717 13.1545085 L 10.0489435 12.690983 L 10.7061074 12.5954915 L 11 12 L 11.2938926 12.5954915 L 11.9510565 12.690983 L 11.4755283 13.1545085 L 11.5877853 13.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 15 13.5 L 14.4122147 13.809017 L 14.5244717 13.1545085 L 14.0489435 12.690983 L 14.7061074 12.5954915 L 15 12 L 15.2938926 12.5954915 L 15.9510565 12.690983 L 15.4755283 13.1545085 L 15.5877853 13.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 15 13.5 L 14.4122147 13.809017 L 14.5244717 13.1545085 L 14.0489435 12.690983 L 14.7061074 12.5954915 L 15 12 L 15.2938926 12.5954915 L 15.9510565 12.690983 L 15.4755283 13.1545085 L 15.5877853 13.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 17 16.5 L 16.4122147 16.809017 L 16.5244717 16.1545085 L 16.0489435 15.690983 L 16.7061074 15.5954915 L 17 15 L 17.2938926 15.5954915 L 17.9510565 15.690983 L 17.4755283 16.1545085 L 17.5877853 16.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 1 16.5 L 0.412214748 16.809017 L 0.524471742 16.1545085 L 0.0489434837 15.690983 L 0.706107374 15.5954915 L 1 15 L 1.29389263 15.5954915 L 1.95105652 15.690983 L 1.47552826 16.1545085 L 1.58778525 16.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 5 16.5 L 4.41221475 16.809017 L 4.52447174 16.1545085 L 4.04894348 15.690983 L 4.70610737 15.5954915 L 5 15 L 5.29389263 15.5954915 L 5.95105652 15.690983 L 5.47552826 16.1545085 L 5.58778525 16.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 9 16.5 L 8.41221475 16.809017 L 8.52447174 16.1545085 L 8.04894348 15.690983 L 8.70610737 15.5954915 L 9 15 L 9.29389263 15.5954915 L 9.95105652 15.690983 L 9.47552826 16.1545085 L 9.58778525 16.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 13 16.5 L 12.4122147 16.809017 L 12.5244717 16.1545085 L 12.0489435 15.690983 L 12.7061074 15.5954915 L 13 15 L 13.2938926 15.5954915 L 13.9510565 15.690983 L 13.4755283 16.1545085 L 13.5877853 16.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 19 13.5 L 18.4122147 13.809017 L 18.5244717 13.1545085 L 18.0489435 12.690983 L 18.7061074 12.5954915 L 19 12 L 19.2938926 12.5954915 L 19.9510565 12.690983 L 19.4755283 13.1545085 L 19.5877853 13.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 3 19.5 L 2.41221475 19.809017 L 2.52447174 19.1545085 L 2.04894348 18.690983 L 2.70610737 18.5954915 L 3 18 L 3.29389263 18.5954915 L 3.95105652 18.690983 L 3.47552826 19.1545085 L 3.58778525 19.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 7 19.5 L 6.41221475 19.809017 L 6.52447174 19.1545085 L 6.04894348 18.690983 L 6.70610737 18.5954915 L 7 18 L 7.29389263 18.5954915 L 7.95105652 18.690983 L 7.47552826 19.1545085 L 7.58778525 19.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 11 19.5 L 10.4122147 19.809017 L 10.5244717 19.1545085 L 10.0489435 18.690983 L 10.7061074 18.5954915 L 11 18 L 11.2938926 18.5954915 L 11.9510565 18.690983 L 11.4755283 19.1545085 L 11.5877853 19.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 15 19.5 L 14.4122147 19.809017 L 14.5244717 19.1545085 L 14.0489435 18.690983 L 14.7061074 18.5954915 L 15 18 L 15.2938926 18.5954915 L 15.9510565 18.690983 L 15.4755283 19.1545085 L 15.5877853 19.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 15 19.5 L 14.4122147 19.809017 L 14.5244717 19.1545085 L 14.0489435 18.690983 L 14.7061074 18.5954915 L 15 18 L 15.2938926 18.5954915 L 15.9510565 18.690983 L 15.4755283 19.1545085 L 15.5877853 19.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 17 22.5 L 16.4122147 22.809017 L 16.5244717 22.1545085 L 16.0489435 21.690983 L 16.7061074 21.5954915 L 17 21 L 17.2938926 21.5954915 L 17.9510565 21.690983 L 17.4755283 22.1545085 L 17.5877853 22.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 1 22.5 L 0.412214748 22.809017 L 0.524471742 22.1545085 L 0.0489434837 21.690983 L 0.706107374 21.5954915 L 1 21 L 1.29389263 21.5954915 L 1.95105652 21.690983 L 1.47552826 22.1545085 L 1.58778525 22.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 5 22.5 L 4.41221475 22.809017 L 4.52447174 22.1545085 L 4.04894348 21.690983 L 4.70610737 21.5954915 L 5 21 L 5.29389263 21.5954915 L 5.95105652 21.690983 L 5.47552826 22.1545085 L 5.58778525 22.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 9 22.5 L 8.41221475 22.809017 L 8.52447174 22.1545085 L 8.04894348 21.690983 L 8.70610737 21.5954915 L 9 21 L 9.29389263 21.5954915 L 9.95105652 21.690983 L 9.47552826 22.1545085 L 9.58778525 22.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 13 22.5 L 12.4122147 22.809017 L 12.5244717 22.1545085 L 12.0489435 21.690983 L 12.7061074 21.5954915 L 13 21 L 13.2938926 21.5954915 L 13.9510565 21.690983 L 13.4755283 22.1545085 L 13.5877853 22.809017 Z" />
+                <path
+                    android:name="Star-55"
+                    android:fillColor="#FFFFFF"
+                    android:fillType="evenOdd"
+                    android:strokeWidth="1"
+                    android:pathData="M 19 19.5 L 18.4122147 19.809017 L 18.5244717 19.1545085 L 18.0489435 18.690983 L 18.7061074 18.5954915 L 19 18 L 19.2938926 18.5954915 L 19.9510565 18.690983 L 19.4755283 19.1545085 L 19.5877853 19.809017 Z" />
+            </group>
+        </group>
+    </group>
+</vector>

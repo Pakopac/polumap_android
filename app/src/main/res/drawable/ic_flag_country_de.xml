@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-432.000000"
+            android:translateY="-816.000000">
+        <group
+                android:name="DEU--Germany"
+                android:translateX="432.000000"
+                android:translateY="816.000000">
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#000000"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M46.6343543,16 L1.36564566,16 C4.66033693,6.67846102 13.5502494,0 24,0 C34.4497506,0 43.3396631,6.67846102 46.6343543,16 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M1.36564566,16 L46.6343543,16 C47.5187662,18.5022314 48,21.1949166 48,24 C48,26.8050834 47.5187662,29.4977686 46.6343543,32 L1.36564566,32 C0.481233769,29.4977686 0,26.8050834 0,24 C0,21.1949166 0.481233769,18.5022314 1.36564566,16 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#F2C500"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M1.36564566,32 L46.6343543,32 C43.3396631,41.321539 34.4497506,48 24,48 C13.5502494,48 4.66033693,41.321539 1.36564566,32 Z" />
+        </group>
+    </group>
+</vector>

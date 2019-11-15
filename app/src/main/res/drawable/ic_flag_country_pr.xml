@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-240.000000"
+            android:translateY="-1776.000000">
+        <group
+                android:name="PRI--Puerto-Rico"
+                android:translateX="240.000000"
+                android:translateY="1776.000000">
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 24 0 C 37.2548339959 0 48 10.7451660041 48 24 C 48 37.2548339959 37.2548339959 48 24 48 C 10.7451660041 48 0 37.2548339959 0 24 C 0 10.7451660041 10.7451660041 0 24 0 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M4.79826064,38.4000244 L43.2017394,38.4000244 C38.8231478,44.2293547 31.8519146,48 24,48 C16.1480854,48 9.17685215,44.2293547 4.79826064,38.4000244 Z M0.480084477,19.2000122 L47.5199155,19.2000122 C47.8347356,20.7509361 48,22.3561683 48,24 C48,25.6438405 47.8347339,27.249081 47.5199105,28.8000126 L0.48008951,28.8000126 C0.165266139,27.249081 0,25.6438405 0,24 C0,22.3561683 0.165264378,20.7509361 0.480084477,19.2000122 Z M43.201758,9.60000038 L4.79824202,9.60000038 C9.17683238,3.77065599 16.1480742,0 24,0 C31.8519258,0 38.8231676,3.77065599 43.201758,9.60000038 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#227FBB"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M7.02943725,40.9705627 C2.6862915,36.627417 0,30.627417 0,24 C0,17.372583 2.6862915,11.372583 7.02943725,7.02943725 L24,24 L7.02943725,40.9705627 Z" />
+            <path
+                android:name="Star-35"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 9 26.4 L 5.47328849 28.854102 L 6.71746436 24.7416408 L 3.2936609 22.145898 L 7.58931539 22.0583592 L 9 18 L 10.4106846 22.0583592 L 14.7063391 22.145898 L 11.2825356 24.7416408 L 12.5267115 28.854102 Z" />
+        </group>
+    </group>
+</vector>

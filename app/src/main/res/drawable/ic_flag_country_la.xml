@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-336.000000"
+            android:translateY="-1200.000000">
+        <group
+                android:name="LAO--Laos-PDR"
+                android:translateX="336.000000"
+                android:translateY="1200.000000">
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M45.3363679,13 L2.66363211,13 C6.65251974,5.27851878 14.7098278,0 24,0 C33.2901722,0 41.3474803,5.27851878 45.3363679,13 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M2.66363211,35 L45.3363679,35 C41.3474803,42.7214812 33.2901722,48 24,48 C14.7098278,48 6.65251974,42.7214812 2.66363211,35 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#227FBB"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M2.66363211,13 L45.3363679,13 C47.0386604,16.2952093 48,20.0353382 48,24 C48,27.9646618 47.0386604,31.7047907 45.3363679,35 L2.66363211,35 C0.961339611,31.7047907 0,27.9646618 0,24 C0,20.0353382 0.961339611,16.2952093 2.66363211,13 Z" />
+            <path
+                android:name="Oval-24"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 24 15 C 28.9705627485 15 33 19.0294372515 33 24 C 33 28.9705627485 28.9705627485 33 24 33 C 19.0294372515 33 15 28.9705627485 15 24 C 15 19.0294372515 19.0294372515 15 24 15 Z" />
+        </group>
+    </group>
+</vector>

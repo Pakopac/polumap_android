@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#132146</color>
+    <color name="colorPrimaryDark">#0C1733</color>
+    <color name="colorAccent">#FFB900</color>
+
+    <color name="intro_background">#DFD0B8</color>
+    <color name="intro_content_background">#FFFFFF</color>
+
+    <color name="aqi_good">#009966</color>
+    <color name="aqi_moderate">#ffde33</color>
+    <color name="aqi_unhealthy_sensitive">#ff9933</color>
+    <color name="aqi_unhealthy">#cc0033</color>
+    <color name="aqi_very_unhealthy">#660099</color>
+    <color name="aqi_hazardous">#7e0023</color>
 </resources>

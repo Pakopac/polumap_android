@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-144.000000"
+            android:translateY="-624.000000">
+        <group
+                android:name="DNK--Denmark"
+                android:translateX="144.000000"
+                android:translateY="624.000000">
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 24 0 C 37.2548339959 0 48 10.7451660041 48 24 C 48 37.2548339959 37.2548339959 48 24 48 C 10.7451660041 48 0 37.2548339959 0 24 C 0 10.7451660041 10.7451660041 0 24 0 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M19,0.521576634 L19,21 L47.8143187,21 C47.93687,21.9827827 48,22.984019 48,24 C48,25.015981 47.93687,26.0172173 47.8143187,27 L19,27 L19,47.4784234 C16.8835535,47.0299143 14.870125,46.3024673 13,45.3363679 L13,27 L0.185681265,27 C0.0631299942,26.0172173 0,25.015981 0,24 C0,22.984019 0.0631299942,21.9827827 0.185681265,21 L13,21 L13,2.66363211 C14.870125,1.69753271 16.8835535,0.970085728 19,0.521576634 Z" />
+        </group>
+    </group>
+</vector>

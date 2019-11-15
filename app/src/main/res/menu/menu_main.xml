@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/around_me"
+            android:icon="@drawable/ic_menu_main_around_me"
+            android:title="@string/main_menu_around_me"
+    />
+    <item
+            android:id="@+id/favs"
+            android:icon="@drawable/ic_menu_main_favs"
+            android:title="@string/main_menu_favs"
+    />
+    <item
+            android:id="@+id/travel"
+            android:icon="@drawable/ic_menu_main_travel"
+            android:title="@string/main_menu_travel"
+    />
+    <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_menu_main_settings"
+            android:title="@string/main_menu_settings"
+    />
+
+</menu>

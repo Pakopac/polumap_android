@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-720.000000"
+            android:translateY="-1008.000000">
+        <group
+                android:name="IRL--Ireland"
+                android:translateX="720.000000"
+                android:translateY="1008.000000">
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 24 0 C 37.2548339959 0 48 10.7451660041 48 24 C 48 37.2548339959 37.2548339959 48 24 48 C 10.7451660041 48 0 37.2548339959 0 24 C 0 10.7451660041 10.7451660041 0 24 0 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#1AAF5D"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M16,1.36564566 L16,46.6343543 C6.67846102,43.3396631 0,34.4497506 0,24 C0,13.5502494 6.67846102,4.66033693 16,1.36564566 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#E87E04"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M32,46.6343543 L32,1.36564566 C41.321539,4.66033693 48,13.5502494 48,24 C48,34.4497506 41.321539,43.3396631 32,46.6343543 Z" />
+        </group>
+    </group>
+</vector>

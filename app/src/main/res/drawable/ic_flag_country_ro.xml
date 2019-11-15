@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-528.000000"
+            android:translateY="-1776.000000">
+        <group
+                android:name="ROU--Romania"
+                android:translateX="528.000000"
+                android:translateY="1776.000000">
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M32,46.6343543 L32,1.36564566 C41.321539,4.66033693 48,13.5502494 48,24 C48,34.4497506 41.321539,43.3396631 32,46.6343543 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#F2C500"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M32,1.36564566 L32,46.6343543 C29.4977686,47.5187662 26.8050834,48 24,48 C21.1949166,48 18.5022314,47.5187662 16,46.6343543 L16,1.36564566 C18.5022314,0.481233769 21.1949166,0 24,0 C26.8050834,0 29.4977686,0.481233769 32,1.36564566 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#227FBB"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M16,1.36564566 L16,46.6343543 C6.67846102,43.3396631 0,34.4497506 0,24 C0,13.5502494 6.67846102,4.66033693 16,1.36564566 Z" />
+        </group>
+    </group>
+</vector>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-240.000000"
+            android:translateY="-1200.000000">
+        <group
+                android:name="KGZ--Kyrgyzstan"
+                android:translateX="240.000000"
+                android:translateY="1200.000000">
+            <path
+                android:name="red"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 24 0 C 37.2548339959 0 48 10.7451660041 48 24 C 48 37.2548339959 37.2548339959 48 24 48 C 10.7451660041 48 0 37.2548339959 0 24 C 0 10.7451660041 10.7451660041 0 24 0 Z" />
+            <path
+                android:name="Star-19"
+                android:fillColor="#F2C500"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 24 33.5145456 L 21.0736452 38.7117792 L 20.358941 32.790294 L 15.6664465 36.4720442 L 17.2722003 30.7277997 L 11.5279558 32.3335535 L 15.209706 27.641059 L 9.28822079 26.9263548 L 14.4854544 24 L 9.28822079 21.0736452 L 15.209706 20.358941 L 11.5279558 15.6664465 L 17.2722003 17.2722003 L 15.6664465 11.5279558 L 20.358941 15.209706 L 21.0736452 9.28822079 L 24 14.4854544 L 26.9263548 9.28822079 L 27.641059 15.209706 L 32.3335535 11.5279558 L 30.7277997 17.2722003 L 36.4720442 15.6664465 L 32.790294 20.358941 L 38.7117792 21.0736452 L 33.5145456 24 L 38.7117792 26.9263548 L 32.790294 27.641059 L 36.4720442 32.3335535 L 30.7277997 30.7277997 L 32.3335535 36.4720442 L 27.641059 32.790294 L 26.9263548 38.7117792 Z" />
+            <path
+                android:name="Oval-23"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 24 16 C 28.4182779986 16 32 19.5817220014 32 24 C 32 28.4182779986 28.4182779986 32 24 32 C 19.5817220014 32 16 28.4182779986 16 24 C 16 19.5817220014 19.5817220014 16 24 16 Z" />
+            <path
+                android:name="Oval-23"
+                android:fillColor="#F2C500"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 24 17 C 27.8659932488 17 31 20.1340067512 31 24 C 31 27.8659932488 27.8659932488 31 24 31 C 20.1340067512 31 17 27.8659932488 17 24 C 17 20.1340067512 20.1340067512 17 24 17 Z" />
+        </group>
+    </group>
+</vector>

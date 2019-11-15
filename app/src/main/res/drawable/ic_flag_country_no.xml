@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+            android:name="circle"
+            android:translateX="-912.000000"
+            android:translateY="-1584.000000">
+        <group
+                android:name="NOR--Norway"
+                android:translateX="912.000000"
+                android:translateY="1584.000000">
+            <path
+                android:name="red"
+                android:fillColor="#E94B35"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 24 0 C 37.2548339959 0 48 10.7451660041 48 24 C 48 37.2548339959 37.2548339959 48 24 48 C 10.7451660041 48 0 37.2548339959 0 24 C 0 10.7451660041 10.7451660041 0 24 0 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#FFFFFF"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M21,0.185681265 L21,19 L47.4784234,19 C47.8201991,20.6127878 48,22.2853965 48,24 C48,25.7146035 47.8201991,27.3872122 47.4784234,29 L21,29 L21,47.8143187 C17.3485161,47.3589851 13.9517757,46.0833648 11,44.177679 L11,29 L0.521576634,29 C0.179800935,27.3872122 0,25.7146035 0,24 C0,22.2853965 0.179800935,20.6127878 0.521576634,19 L11,19 L11,3.82232102 C13.9517757,1.91663525 17.3485161,0.641014857 21,0.185681265 Z" />
+            <path
+                android:name="Combined-Shape"
+                android:fillColor="#227FBB"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M19,0.521576634 L19,21 L47.8143187,21 C47.93687,21.9827827 48,22.984019 48,24 C48,25.015981 47.93687,26.0172173 47.8143187,27 L19,27 L19,47.4784234 C16.8835535,47.0299143 14.870125,46.3024673 13,45.3363679 L13,27 L0.185681265,27 C0.0631299942,26.0172173 0,25.015981 0,24 C0,22.984019 0.0631299942,21.9827827 0.185681265,21 L13,21 L13,2.66363211 C14.870125,1.69753271 16.8835535,0.970085728 19,0.521576634 Z" />
+        </group>
+    </group>
+</vector>
