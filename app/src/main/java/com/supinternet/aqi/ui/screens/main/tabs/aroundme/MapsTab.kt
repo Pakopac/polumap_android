@@ -54,6 +54,15 @@ class MapsTab : Fragment(), OnMapReadyCallback {
         val station: Map<String, String>?
     )
 
+    data class ResponseSearch(
+        val data: List<GetSearch>
+    )
+
+    data class GetSearch(
+        val uid: Int,
+        val aqi: String
+    )
+
     interface API {
         @GET("getMapBounds")
 
@@ -69,6 +78,22 @@ class MapsTab : Fragment(), OnMapReadyCallback {
 
     fun getAPI(latlng: String, callback: Callback<Response>) {
         return api.getDataById(latlng).enqueue(callback)
+    }
+
+    interface APISearch {
+        @GET("getSearch")
+        fun getDataById(@Query("keyword") id:String) : Call<Response>
+    }
+
+    val apiSearch = Retrofit.Builder()
+        .baseUrl("https://us-central1-polumapproject.cloudfunctions.net/api/")
+        .addConverterFactory(
+            GsonConverterFactory.create())
+        .build()
+        .create(APISearch::class.java)
+
+    fun getAPISearch(search: String, callback: Callback<Response>) {
+        return apiSearch.getDataById(search).enqueue(callback)
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
@@ -134,6 +159,19 @@ class MapsTab : Fragment(), OnMapReadyCallback {
                 }
             });
         }
+
+        getAPISearch("bangalore", object : retrofit2.Callback<Response> {
+
+            override fun onResponse(call: Call<Response>, response: retrofit2.Response<Response>) {
+                Log.v("ccc",response.body().toString())
+            }
+
+            override fun onFailure(call: Call<Response>, t: Throwable) {
+                Log.v("ccc",t.toString())
+                t.printStackTrace()
+            }
+
+        })
     }
 
 }
