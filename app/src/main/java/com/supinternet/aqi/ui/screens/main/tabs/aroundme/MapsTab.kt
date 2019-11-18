@@ -3,12 +3,15 @@ package com.supinternet.aqi.ui.screens.main.tabs.aroundme
 import android.app.AlertDialog
 import android.content.Context
 import android.content.DialogInterface
+import android.media.Image
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.google.android.gms.maps.*
 import com.google.android.gms.maps.model.*
@@ -21,6 +24,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Query
+import java.util.*
 
 
 class MapsTab : Fragment(), OnMapReadyCallback {
@@ -58,9 +62,18 @@ class MapsTab : Fragment(), OnMapReadyCallback {
         val data: List<GetSearch>
     )
 
+    data class Station(
+        val name:String,
+        val geo: Array<Double>,
+        val url:String,
+        val country:String
+    )
+
     data class GetSearch(
         val uid: Int,
-        val aqi: String
+        val aqi: String,
+        val time: Any,
+        val station: Station
     )
 
     interface API {
@@ -82,7 +95,7 @@ class MapsTab : Fragment(), OnMapReadyCallback {
 
     interface APISearch {
         @GET("getSearch")
-        fun getDataById(@Query("keyword") id:String) : Call<Response>
+        fun getDataById(@Query("keyword") id:String) : Call<ResponseSearch>
     }
 
     val apiSearch = Retrofit.Builder()
@@ -92,7 +105,7 @@ class MapsTab : Fragment(), OnMapReadyCallback {
         .build()
         .create(APISearch::class.java)
 
-    fun getAPISearch(search: String, callback: Callback<Response>) {
+    fun getAPISearch(search: String, callback: Callback<ResponseSearch>) {
         return apiSearch.getDataById(search).enqueue(callback)
     }
 
@@ -147,9 +160,6 @@ class MapsTab : Fragment(), OnMapReadyCallback {
                             }
                         }
                     }
-                    //map.addMarker(MarkerOptions().position(LatLng(47.055817, 1.042124 )).title("Verneuil, France"))
-
-                    //map.addMarker(MarkerOptions().position(LatLng(44.92545, 1.8457342)).title("Marker1"))
                 }
 
                 override fun onFailure(call: Call<Response>, t: Throwable) {
@@ -160,18 +170,51 @@ class MapsTab : Fragment(), OnMapReadyCallback {
             });
         }
 
-        getAPISearch("bangalore", object : retrofit2.Callback<Response> {
+        val btn_search_bar = view!!.findViewById(R.id.search_button_bar) as ImageView
 
-            override fun onResponse(call: Call<Response>, response: retrofit2.Response<Response>) {
-                Log.v("ccc",response.body().toString())
-            }
+        btn_search_bar.setOnClickListener {
+            map.clear()
+            val text_search = view!!.findViewById(R.id.textSearch) as EditText
+            getAPISearch(text_search.getText().toString(), object : retrofit2.Callback<ResponseSearch> {
 
-            override fun onFailure(call: Call<Response>, t: Throwable) {
-                Log.v("ccc",t.toString())
-                t.printStackTrace()
-            }
+                override fun onResponse(call: Call<ResponseSearch>, response: retrofit2.Response<ResponseSearch>) {
+                    if(response.body()?.data.isNullOrEmpty()){
+                        val dialogBuilder = AlertDialog.Builder(view?.context)
+                        dialogBuilder.setTitle("Aucune station")
 
-        })
+                            .setMessage("Aucune station n'existe. Veuillez faire une recherche valide")
+                            .setNegativeButton("OK", DialogInterface.OnClickListener {
+                                    dialog, id -> dialog.cancel()
+                            })
+                            .create()
+                            .show()
+                    }
+                    else{
+                        var count = 0
+                        for(item in response.body()!!.data){
+                            if(count < 20) {
+                                count++
+                                map.addMarker(MarkerOptions()
+                                    .position(LatLng(item.station.geo[0], item.station.geo[1]))
+                                    .title(item.station.name)
+                                    .icon(BitmapDescriptorFactory.fromBitmap(
+                                        GoogleMapUtils.getBitmap(
+                                            requireContext(),
+                                            R.drawable.ic_map_marker)))
+                                )
+                            }
+                        }
+                    }
+                }
+
+                override fun onFailure(call: Call<ResponseSearch>, t: Throwable) {
+                    Log.v("ccc",t.toString())
+                    t.printStackTrace()
+                }
+
+            })
+        }
+
     }
 
 }
