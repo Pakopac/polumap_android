@@ -1,10 +1,14 @@
 package com.supinternet.aqi.ui.screens.main.tabs.aroundme
 
+import android.annotation.SuppressLint
+import android.annotation.TargetApi
 import android.app.AlertDialog
 import android.content.Context
 import android.content.DialogInterface
 import android.media.Image
+import android.os.Build
 import android.os.Bundle
+import android.text.format.DateUtils
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -12,23 +16,40 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.TextView
+import androidx.annotation.RequiresApi
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.google.android.gms.maps.*
 import com.google.android.gms.maps.model.*
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.card.MaterialCardView
 import com.supinternet.aqi.R
 import com.supinternet.aqi.ui.utils.GoogleMapUtils
+import kotlinx.android.synthetic.main.fragment_maps_station_card.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Query
+import java.sql.Time
+import java.text.SimpleDateFormat
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 import java.util.*
 
+class StationData(
+    val id: Int,
+    val name: String?,
+    val coordinate: Array<Double>,
+    val aqi:String,
+    val time:String?
+)
 
 class MapsTab : Fragment(), OnMapReadyCallback {
 
+    private val markersData = mutableMapOf<Marker, StationData>()
     private lateinit var map: GoogleMap
 
     override fun onCreateView(
@@ -69,10 +90,16 @@ class MapsTab : Fragment(), OnMapReadyCallback {
         val country:String
     )
 
+    data class Time(
+        val tz:String,
+        val stime:String,
+        val vtime:String
+    )
+
     data class GetSearch(
         val uid: Int,
         val aqi: String,
-        val time: Any,
+        val time: Time,
         val station: Station
     )
 
@@ -109,6 +136,7 @@ class MapsTab : Fragment(), OnMapReadyCallback {
         return apiSearch.getDataById(search).enqueue(callback)
     }
 
+
     override fun onMapReady(googleMap: GoogleMap) {
         map = googleMap
 
@@ -119,8 +147,15 @@ class MapsTab : Fragment(), OnMapReadyCallback {
         )
 
         val btn_search = view!!.findViewById(R.id.maps_tab_search_zone_button) as MaterialButton
+        val tab_station = view!!.findViewById(R.id.maps_tab_station) as MaterialCardView
+        val name_text =  view!!.findViewById(R.id.name) as TextView
+        val aqi_value =  view!!.findViewById(R.id.aqi_value) as TextView
+        val date_value = view!!.findViewById(R.id.date_value) as TextView
+
+        Log.v("cardview", btn_search.visibility.toString())
 
         btn_search.setOnClickListener {
+            tab_station.visibility = View.GONE
             val coordinate:String =
                 map.getProjection().getVisibleRegion().farLeft.latitude.toString() + ',' +
                         map.getProjection().getVisibleRegion().farLeft.longitude.toString() + ',' +
@@ -128,12 +163,12 @@ class MapsTab : Fragment(), OnMapReadyCallback {
                         map.getProjection().getVisibleRegion().nearRight.longitude.toString()
 
             getAPI(coordinate, object : retrofit2.Callback<Response> {
-
+                @TargetApi(Build.VERSION_CODES.O)
+                @RequiresApi(Build.VERSION_CODES.O)
                 override fun onResponse(call: Call<Response>, response: retrofit2.Response<Response>) {
                     map.clear()
                     var count = 0
                     val GetDatas = response.body()
-                    Log.v("aaaaa", response.body().toString())
                     if(response.body()?.data.isNullOrEmpty()){
                         val dialogBuilder = AlertDialog.Builder(view?.context)
                         dialogBuilder.setTitle("Aucune station")
@@ -146,30 +181,48 @@ class MapsTab : Fragment(), OnMapReadyCallback {
                             .show()
                     }
                     else{
+
                         for(item in response.body()!!.data){
                             if(count < 20) {
                                 count++
-                                map.addMarker(MarkerOptions()
+                                val marker = MarkerOptions()
                                     .position(LatLng(item.lat, item.lon))
                                     .title(item.station?.get("name"))
-                                    .icon(BitmapDescriptorFactory.fromBitmap(
-                                        GoogleMapUtils.getBitmap(
-                                            requireContext(),
-                                            R.drawable.ic_map_marker)))
-                                )
+                                    .icon(
+                                        BitmapDescriptorFactory.fromBitmap(
+                                            GoogleMapUtils.getBitmap(
+                                                requireContext(),
+                                                R.drawable.ic_map_marker
+                                            )
+                                        )
+                                    )
+                                val mapMarker = map.addMarker(marker)
+                                val data = StationData(count,item.station?.get("name"),
+                                    arrayOf(item.lat,item.lon),item.aqi,item.station?.get("time"))
+                                markersData[mapMarker] = data
+                                map.setOnMarkerClickListener { marker ->
+                                    val data = markersData[marker]
+                                    if (data != null) {
+                                        tab_station.visibility = View.VISIBLE
+                                        name_text.setText(data.name)
+                                        aqi_value.setText(data.aqi)
+                                        check_aqi(aqi_value, data.aqi.toIntOrNull())
+                                        date(data.time, "yyyy-MM-dd'T'HH:mm:ssXXX")
+                                    }
+                                    true
+                                }
                             }
                         }
                     }
                 }
 
-                override fun onFailure(call: Call<Response>, t: Throwable) {
 
+                override fun onFailure(call: Call<Response>, t: Throwable) {
                     Log.v("abcde", t.toString())
                     t.printStackTrace();
                 }
             });
         }
-
         val btn_search_bar = view!!.findViewById(R.id.search_button_bar) as ImageView
 
         btn_search_bar.setOnClickListener {
@@ -177,6 +230,7 @@ class MapsTab : Fragment(), OnMapReadyCallback {
             val text_search = view!!.findViewById(R.id.textSearch) as EditText
             getAPISearch(text_search.getText().toString(), object : retrofit2.Callback<ResponseSearch> {
 
+                @RequiresApi(Build.VERSION_CODES.O)
                 override fun onResponse(call: Call<ResponseSearch>, response: retrofit2.Response<ResponseSearch>) {
                     if(response.body()?.data.isNullOrEmpty()){
                         val dialogBuilder = AlertDialog.Builder(view?.context)
@@ -194,14 +248,29 @@ class MapsTab : Fragment(), OnMapReadyCallback {
                         for(item in response.body()!!.data){
                             if(count < 20) {
                                 count++
-                                map.addMarker(MarkerOptions()
+                                val marker = MarkerOptions()
                                     .position(LatLng(item.station.geo[0], item.station.geo[1]))
                                     .title(item.station.name)
                                     .icon(BitmapDescriptorFactory.fromBitmap(
                                         GoogleMapUtils.getBitmap(
                                             requireContext(),
                                             R.drawable.ic_map_marker)))
-                                )
+
+                                val mapMarker = map.addMarker(marker)
+                                val data = StationData(count,item.station.name,
+                                    arrayOf(item.station.geo[0],item.station.geo[1]),item.aqi,item.time.stime + item.time.tz)
+                                markersData[mapMarker] = data
+                                map.setOnMarkerClickListener { marker ->
+                                    val data = markersData[marker]
+                                    if (data != null) {
+                                        tab_station.visibility = View.VISIBLE
+                                        name_text.setText(data.name)
+                                        aqi_value.setText(data.aqi)
+                                        check_aqi(aqi_value, data.aqi.toIntOrNull())
+                                        date(data.time, "yyyy-MM-dd HH:mm:ssXXX")
+                                    }
+                                    true
+                                }
                             }
                         }
                     }
@@ -215,6 +284,32 @@ class MapsTab : Fragment(), OnMapReadyCallback {
             })
         }
 
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    private fun date(time: String?, format: String) {
+        val formatter =  SimpleDateFormat(format)
+        val timeFormatted = formatter.parse(time)
+        //DateUtils.formatDateTime()
+        date_value.setText(DateUtils.getRelativeTimeSpanString(timeFormatted.getTime()))
+    }
+
+    private fun check_aqi(aqiValue: TextView, aqi: Int?) {
+        if(aqi != null) {
+            if (0 <= aqi && aqi <= 50) {
+                aqiValue.setTextColor(ContextCompat.getColor(context!!, R.color.aqi_good))
+            } else if (51 <= aqi && aqi <= 100) {
+                aqiValue.setTextColor(ContextCompat.getColor(context!!, R.color.aqi_moderate))
+            } else if (101 <= aqi && aqi <= 150) {
+                aqiValue.setTextColor(ContextCompat.getColor(context!!, R.color.aqi_unhealthy_sensitive))
+            } else if (151 <= aqi && aqi <= 200) {
+                aqiValue.setTextColor(ContextCompat.getColor(context!!, R.color.aqi_unhealthy))
+            } else if (201 <= aqi && aqi <= 300) {
+                aqiValue.setTextColor(ContextCompat.getColor(context!!, R.color.aqi_very_unhealthy))
+            } else if (300 <= aqi) {
+                aqiValue.setTextColor(ContextCompat.getColor(context!!, R.color.aqi_hazardous))
+            }
+        }
     }
 
 }
