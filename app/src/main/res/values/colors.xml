@@ -6,6 +6,7 @@
 
     <color name="intro_background">#DFD0B8</color>
     <color name="intro_content_background">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
 
     <color name="aqi_good">#009966</color>
     <color name="aqi_moderate">#ffde33</color>
@@ -13,4 +14,8 @@
     <color name="aqi_unhealthy">#cc0033</color>
     <color name="aqi_very_unhealthy">#660099</color>
     <color name="aqi_hazardous">#7e0023</color>
+
+    <color name="bubble_lightBorder">#e9f0fc</color>
+    <color name="bubble_lightBackground">#fafafa</color>
+    <color name="button_background">#527397</color>
 </resources>

@@ -21,6 +21,6 @@ class SplashScreenActivity : AppCompatActivity() {
 
     private fun isUserConnected() : Boolean {
         // TODO Rechercher si l'utilisateur est déjà connecté
-        return true
+        return false
     }
 }

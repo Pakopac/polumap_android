@@ -1,55 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardview_maps_tab_station"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
-    <RelativeLayout
-            android:id="@+id/info_station"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp">
-    <TextView
-            android:id="@+id/name"
-            android:text="Alto Hospicio, Chile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+        android:id="@+id/cardView_station"
+        android:layout_width="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_height="@dimen/maps_station_card_height"
+        android:visibility="gone"
+        app:cardElevation="5dp"
+        app:contentPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp">
 
-    <TextView
-            android:id="@+id/aqi_text"
-            android:layout_width="wrap_content"
+    <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/name"
-            android:text="AQI : "
-            app:layout_constraintTop_toBottomOf="@id/name"
-            android:textStyle="bold"/>
-
-    <TextView
-            android:id="@+id/aqi_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="41"
-            android:layout_below="@+id/name"
-            android:layout_toEndOf="@id/aqi_text"/>
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="25dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="10dp">
 
         <TextView
-            android:id="@+id/date_text"
-            android:text="Date du relevé : "
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/aqi_text"
-                android:textStyle="bold"/>
-    <TextView
-            android:id="@+id/date_value"
-            tools:text="51 minutes ago"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/aqi_text"
-            android:layout_toEndOf="@id/date_text"/>
-    </RelativeLayout>
+                android:id="@+id/maps_tab_station_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="Paris" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/maps_tab_station_aqi_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maps_tab_station_aqi_label"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/maps_tab_station_aqi_value"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="wrap_content"
+                    tools:text="42" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/maps_tab_station_event_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maps_tab_station_event_date_label"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/maps_tab_station_date_value"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="wrap_content"
+                    tools:text="42" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </com.google.android.material.card.MaterialCardView>

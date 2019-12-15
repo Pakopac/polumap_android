@@ -5,6 +5,7 @@ import android.annotation.TargetApi
 import android.app.AlertDialog
 import android.content.Context
 import android.content.DialogInterface
+import android.content.Intent
 import android.media.Image
 import android.os.Build
 import android.os.Bundle
@@ -25,7 +26,9 @@ import com.google.android.gms.maps.model.*
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.card.MaterialCardView
 import com.supinternet.aqi.R
+import com.supinternet.aqi.ui.screens.main.DetailActivity
 import com.supinternet.aqi.ui.utils.GoogleMapUtils
+import kotlinx.android.synthetic.main.fragment_maps.*
 import kotlinx.android.synthetic.main.fragment_maps_station_card.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -148,9 +151,9 @@ class MapsTab : Fragment(), OnMapReadyCallback {
 
         val btn_search = view!!.findViewById(R.id.maps_tab_search_zone_button) as MaterialButton
         val tab_station = view!!.findViewById(R.id.maps_tab_station) as MaterialCardView
-        val name_text =  view!!.findViewById(R.id.name) as TextView
-        val aqi_value =  view!!.findViewById(R.id.aqi_value) as TextView
-        val date_value = view!!.findViewById(R.id.date_value) as TextView
+        val name_text =  view!!.findViewById(R.id.maps_tab_station_name) as TextView
+        val aqi_value =  view!!.findViewById(R.id.maps_tab_station_aqi_value) as TextView
+        val date_value = view!!.findViewById(R.id.maps_tab_station_date_value) as TextView
 
         Log.v("cardview", btn_search.visibility.toString())
 
@@ -204,6 +207,9 @@ class MapsTab : Fragment(), OnMapReadyCallback {
                                     val data = markersData[marker]
                                     if (data != null) {
                                         tab_station.visibility = View.VISIBLE
+                                        val intent = Intent(context, DetailActivity::class.java)
+
+                                        maps_tab_station.setOnClickListener{ startActivity(intent)}
                                         name_text.setText(data.name)
                                         aqi_value.setText(data.aqi)
                                         check_aqi(aqi_value, data.aqi.toIntOrNull())
@@ -223,11 +229,11 @@ class MapsTab : Fragment(), OnMapReadyCallback {
                 }
             });
         }
-        val btn_search_bar = view!!.findViewById(R.id.search_button_bar) as ImageView
+        val btn_search_bar = view!!.findViewById(R.id.maps_tab_search_field_arrow) as ImageView
 
         btn_search_bar.setOnClickListener {
             map.clear()
-            val text_search = view!!.findViewById(R.id.textSearch) as EditText
+            val text_search = view!!.findViewById(R.id.maps_tab_search_field) as EditText
             getAPISearch(text_search.getText().toString(), object : retrofit2.Callback<ResponseSearch> {
 
                 @RequiresApi(Build.VERSION_CODES.O)
@@ -264,6 +270,9 @@ class MapsTab : Fragment(), OnMapReadyCallback {
                                     val data = markersData[marker]
                                     if (data != null) {
                                         tab_station.visibility = View.VISIBLE
+                                        val intent = Intent(context, DetailActivity::class.java)
+
+                                        maps_tab_station.setOnClickListener{ startActivity(intent)}
                                         name_text.setText(data.name)
                                         aqi_value.setText(data.aqi)
                                         check_aqi(aqi_value, data.aqi.toIntOrNull())
@@ -291,6 +300,7 @@ class MapsTab : Fragment(), OnMapReadyCallback {
         val formatter =  SimpleDateFormat(format)
         val timeFormatted = formatter.parse(time)
         //DateUtils.formatDateTime()
+        val date_value = view!!.findViewById(R.id.maps_tab_station_date_value) as TextView
         date_value.setText(DateUtils.getRelativeTimeSpanString(timeFormatted.getTime()))
     }
 

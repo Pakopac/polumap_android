@@ -103,4 +103,19 @@
     <string name="country_XK_name">Kosovo</string>
     <string name="country_ZA_name">Afrique du Sud</string>
 
+    <string name="maps_tab_zone_error_title">Une erreur est survenue</string>
+    <string name="maps_tab_zone_error_message">Impossible de trouver des stations dans cette zone</string>
+    <string name="maps_tab_search_error_title">Une erreur est survenue</string>
+    <string name="maps_tab_search_error_message">Impossible de trouver des stations avec cette recherche</string>
+    <string name="maps_tab_zone_no_station_title">Aucune station</string>
+    <string name="maps_tab_zone_no_station_message">Aucune station n\'existe. Veuillez essayer d\'élargir la zone de recherche.</string>
+    <string name="maps_tab_search_no_station_title">Aucune station</string>
+    <string name="maps_tab_search_no_station_message">Aucune station n\'existe avec cette recherche.</string>
+    <string name="air_quality">Qualité de l\'air %1$s</string>
+    <string name="no_result">Aucun résultat</string>
+    <string name="droidSansBold">DroidSans-Bold.ttf</string>
+    <string name="button_usaqi">USAQI</string>
+    <string name="button_pm2_5">PM2.5</string>
+    <string name="button_pm10">PM10</string>
+    <string name="button_no2">NO2</string>
 </resources>
