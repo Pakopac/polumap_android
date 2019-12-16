@@ -27,14 +27,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        replaceFragment(MapsTab())
-
         val user_id = intent.getStringExtra("user_id")
+            replaceFragment(MapsTab.newInstance(user_id))
+
+
+        Log.v("user_id",user_id)
 
         bottom_navigation.setOnNavigationItemSelectedListener { item ->
             replaceFragment(
                 when (item.itemId) {
-                    R.id.around_me -> MapsTab()
+                    R.id.around_me -> MapsTab.newInstance(user_id)
                     R.id.favs -> FavsTab.newInstance(user_id)
                     R.id.travel -> TravelTab()
                     R.id.settings -> SettingsTab()

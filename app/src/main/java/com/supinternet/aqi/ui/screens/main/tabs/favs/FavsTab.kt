@@ -105,18 +105,6 @@ class FavsTab : Fragment() {
         GlobalScope.launch(Dispatchers.Default) {
 
 
-            for(station in data) {
-
-                val res =
-                    com.supinternet.aqi.data.network.AQIAPI.getInstance().currentStationData(
-                        station.stationId,
-                        "7ed2ade1e4f2bcf13b203614959658c2d944f131"
-                    ).await()
-                Log.v("favs2", res.toString())
-
-                //arrrayResult.add(res.data)
-            }
-
         }
     }
 }

@@ -43,6 +43,17 @@ class StationData(
 
 class MapsTab : Fragment(), OnMapReadyCallback {
 
+    companion object {
+        private val ARG_USERID = "user_id"
+        fun newInstance(user_id: String):MapsTab {
+            val args: Bundle = Bundle()
+            args.putSerializable(ARG_USERID, user_id)
+            val fragment = MapsTab()
+            fragment.arguments = args
+            return fragment
+        }
+    }
+
     private val markersData = mutableMapOf<Marker, StationData>()
     private lateinit var map: GoogleMap
 
@@ -56,6 +67,7 @@ class MapsTab : Fragment(), OnMapReadyCallback {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        Log.v("user_id",getArguments().toString())
 
         (childFragmentManager.findFragmentById(R.id.maps_tab_gmap) as SupportMapFragment).getMapAsync(
             this
@@ -197,12 +209,14 @@ class MapsTab : Fragment(), OnMapReadyCallback {
                                 map.setOnMarkerClickListener { marker ->
                                     val data = markersData[marker]
                                     if (data != null) {
+                                        Log.v("user_id",getArguments().toString())
                                         tab_station.visibility = View.VISIBLE
                                         val intent = Intent(context, DetailActivity::class.java)
 
                                         maps_tab_station.setOnClickListener{ startActivity(intent)}
                                         Log.v("id", data.id.toString())
 
+                                        intent.putExtra("user_id", getArguments()!!.getString("user_id"))
                                         intent.putExtra("name", data.name)
                                         intent.putExtra("id", data.id.toString())
                                         intent.putExtra("air_quality", data.aqi)

@@ -1,6 +1,7 @@
 package com.supinternet.aqi.ui.screens.main
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -13,11 +14,20 @@ import com.anychart.core.cartesian.series.Column
 import com.supinternet.aqi.R
 import com.supinternet.aqi.data.network.RankingAPI
 import com.supinternet.aqi.data.network.model.history.History
+import com.supinternet.aqi.data.network.model.station.Data
+import com.supinternet.aqi.ui.screens.main.tabs.favs.FavsTab
 import kotlinx.android.synthetic.main.detail_activity.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.http.GET
+import retrofit2.http.Query
 
 data class Bubble(val value: Double, val unit: String, val indice: String)
 
@@ -25,11 +35,30 @@ class DetailActivity : AppCompatActivity() {
     var history: List<History> = listOf()
     var chartView: AnyChartView? = null
 
+    interface API {
+        @GET("addFav")
+
+        fun getDataById(@Query("id") id: String, @Query ("userID") userID: String): Call<Data>
+    }
+
+    val api = Retrofit.Builder()
+        .baseUrl("https://us-central1-polumapproject.cloudfunctions.net/api/")
+        .addConverterFactory(
+            GsonConverterFactory.create()
+        )
+        .build()
+        .create(API::class.java)
+
+    fun getAPI(id: String, userID: String, callback: Callback<Data>) {
+        return api.getDataById(id, userID).enqueue(callback)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.detail_activity)
 
+        val user_id = intent.getStringExtra("user_id")
         val name = intent.getStringExtra("name")
         val id = intent.getStringExtra("id")
         val airQuality = intent.getStringExtra("air_quality")
@@ -131,6 +160,21 @@ class DetailActivity : AppCompatActivity() {
             bubblesViews[index].findViewById<TextView>(R.id.bubble_indice).text = bubble.indice
             bubblesViews[index].findViewById<TextView>(R.id.bubble_value).text = bubble.value.toString()
             bubblesViews[index].findViewById<TextView>(R.id.bubble_unit).text = bubble.unit
+        }
+
+        button_addFav.setOnClickListener { view ->
+            Log.v("user_id2", user_id)
+            getAPI(id, user_id , object : retrofit2.Callback<Data> {
+                override fun onFailure(call: Call<Data>, t: Throwable) {
+                    Log.e("error", t.message)
+                }
+
+                override fun onResponse(call: Call<Data>, response: Response<Data>) {
+                    Log.v("addFavoris", response.body().toString())
+                }
+
+            })
+            //Log.v("addFav", user_id)
         }
     }
 
