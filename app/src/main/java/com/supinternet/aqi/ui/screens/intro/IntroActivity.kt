@@ -45,7 +45,7 @@ class IntroActivity: AppCompatActivity() {
         fbAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this, OnCompleteListener<AuthResult> { task ->
             if(task.isSuccessful){
                 var intent = Intent(this, MainActivity::class.java)
-                intent.putExtra("id", fbAuth.currentUser?.email)
+                intent.putExtra("user_id", fbAuth.currentUser?.uid)
                 Log.v("iddumec", fbAuth.currentUser?.uid)
                 startActivity(intent)
 
