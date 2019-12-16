@@ -28,6 +28,9 @@
             android:theme="@style/IntroTheme"
             android:exported="false" />
 
+        <activity android:name=".ui.screens.intro.RegisterActivity"
+                android:exported="false" />
+
         <activity android:name=".ui.screens.main.MainActivity"
             android:exported="false" />
 

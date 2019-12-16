@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "359392069421",
+    "firebase_url": "https://polumapproject.firebaseio.com",
+    "project_id": "polumapproject",
+    "storage_bucket": "polumapproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359392069421:android:1921ca4633d3a6de87b5a4",
+        "android_client_info": {
+          "package_name": "com.example.polumap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359392069421-jjm774l1i69n9vlqubdo7lrp9jmi5dlo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.polumap",
+            "certificate_hash": "dcbc45ebf9fea95a1a4d36e190e28f8e9ea3b1f5"
+          }
+        },
+        {
+          "client_id": "359392069421-niun63v7l4bb013slr32hr6907s90bo6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA0dSBX9F3UgaG9ZchsAABQm_52ktW7ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359392069421-niun63v7l4bb013slr32hr6907s90bo6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

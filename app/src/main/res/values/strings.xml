@@ -3,6 +3,14 @@
     <string name="title_activity_maps">Map</string>
 
     <string name="intro_login_title">Login</string>
+    <string name="intro_register_title">Register</string>
+    <string name="intro_redirect_register">
+        <a href="#">Not Sign Up</a>
+    </string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Register</string>
 
     <string name="main_menu_around_me">Around me</string>
     <string name="main_menu_settings">Settings</string>

@@ -1,12 +1,9 @@
 package com.supinternet.aqi.ui.screens.main.tabs.aroundme
 
-import android.annotation.SuppressLint
 import android.annotation.TargetApi
 import android.app.AlertDialog
-import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
-import android.media.Image
 import android.os.Build
 import android.os.Bundle
 import android.text.format.DateUtils
@@ -14,7 +11,6 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
@@ -29,18 +25,13 @@ import com.supinternet.aqi.R
 import com.supinternet.aqi.ui.screens.main.DetailActivity
 import com.supinternet.aqi.ui.utils.GoogleMapUtils
 import kotlinx.android.synthetic.main.fragment_maps.*
-import kotlinx.android.synthetic.main.fragment_maps_station_card.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Query
-import java.sql.Time
 import java.text.SimpleDateFormat
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
-import java.util.*
 
 class StationData(
     val id: Int,
@@ -184,7 +175,7 @@ class MapsTab : Fragment(), OnMapReadyCallback {
                             .show()
                     }
                     else{
-
+                        Log.v("abcde", response.body().toString())
                         for(item in response.body()!!.data){
                             if(count < 20) {
                                 count++
@@ -200,7 +191,7 @@ class MapsTab : Fragment(), OnMapReadyCallback {
                                         )
                                     )
                                 val mapMarker = map.addMarker(marker)
-                                val data = StationData(count,item.station?.get("name"),
+                                val data = StationData(item.uid.toInt(),item.station?.get("name"),
                                     arrayOf(item.lat,item.lon),item.aqi,item.station?.get("time"))
                                 markersData[mapMarker] = data
                                 map.setOnMarkerClickListener { marker ->
@@ -210,6 +201,12 @@ class MapsTab : Fragment(), OnMapReadyCallback {
                                         val intent = Intent(context, DetailActivity::class.java)
 
                                         maps_tab_station.setOnClickListener{ startActivity(intent)}
+                                        Log.v("id", data.id.toString())
+
+                                        intent.putExtra("name", data.name)
+                                        intent.putExtra("id", data.id.toString())
+                                        intent.putExtra("air_quality", data.aqi)
+
                                         name_text.setText(data.name)
                                         aqi_value.setText(data.aqi)
                                         check_aqi(aqi_value, data.aqi.toIntOrNull())
@@ -263,7 +260,7 @@ class MapsTab : Fragment(), OnMapReadyCallback {
                                             R.drawable.ic_map_marker)))
 
                                 val mapMarker = map.addMarker(marker)
-                                val data = StationData(count,item.station.name,
+                                val data = StationData(item.uid,item.station.name,
                                     arrayOf(item.station.geo[0],item.station.geo[1]),item.aqi,item.time.stime + item.time.tz)
                                 markersData[mapMarker] = data
                                 map.setOnMarkerClickListener { marker ->
@@ -273,6 +270,11 @@ class MapsTab : Fragment(), OnMapReadyCallback {
                                         val intent = Intent(context, DetailActivity::class.java)
 
                                         maps_tab_station.setOnClickListener{ startActivity(intent)}
+
+                                        intent.putExtra("name", data.name)
+                                        intent.putExtra("id", data.id.toString())
+                                        intent.putExtra("air_quality", data.aqi)
+
                                         name_text.setText(data.name)
                                         aqi_value.setText(data.aqi)
                                         check_aqi(aqi_value, data.aqi.toIntOrNull())

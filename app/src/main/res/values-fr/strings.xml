@@ -2,6 +2,14 @@
     <string name="app_name">Qualité de l\'air</string>
     <string name="title_activity_maps">Carte</string>
     <string name="intro_login_title">Se Connecter</string>
+    <string name="intro_register_title">S\'Inscrire</string>
+    <string name="intro_redirect_register">
+        <a href="#">Pas encore Inscrit?</a>
+    </string>
+    <string name="email">Email</string>
+    <string name="password">Mot de Passe</string>
+    <string name="login_button">Se Connecter</string>
+    <string name="register_button">S\'Inscrire</string>
 
     <string name="main_menu_around_me">Autour de moi</string>
     <string name="main_menu_settings">Paramètres</string>
