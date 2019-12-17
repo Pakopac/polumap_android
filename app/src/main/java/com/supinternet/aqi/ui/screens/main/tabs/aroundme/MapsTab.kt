@@ -220,6 +220,7 @@ class MapsTab : Fragment(), OnMapReadyCallback {
                                         intent.putExtra("name", data.name)
                                         intent.putExtra("id", data.id.toString())
                                         intent.putExtra("air_quality", data.aqi)
+                                        Log.v("dataForDetails", data.toString())
 
                                         name_text.setText(data.name)
                                         aqi_value.setText(data.aqi)
