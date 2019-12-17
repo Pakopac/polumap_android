@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.supinternet.aqi.data.network.model.station.Data
 
-class ListAdapter(private val list: List<Data>)
+class ListAdapter(private val list: List<Data>, private val user_id: String)
     : RecyclerView.Adapter<DataViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DataViewHolder {
@@ -15,7 +15,7 @@ class ListAdapter(private val list: List<Data>)
 
     override fun onBindViewHolder(holder: DataViewHolder, position: Int) {
         val data: Data = list[position]
-        holder.bind(data)
+        holder.bind(data, user_id)
     }
 
     override fun getItemCount(): Int = list.size

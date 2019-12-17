@@ -89,7 +89,7 @@ class FavsTab : Fragment() {
                     withContext(Dispatchers.Main) {
                         lists.apply {
                             layoutManager = LinearLayoutManager(activity)
-                            adapter = ListAdapter(arrrayResult)
+                            adapter = ListAdapter(arrrayResult, getArguments()!!.getString("user_id"))
                             waitingBar?.visibility = View.GONE
                         }
                     }
